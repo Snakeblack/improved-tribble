@@ -2,7 +2,7 @@ import React from "react";
 import { Home } from "../pages/home/Home";
 import { About } from "../pages/about/About";
 import { Contact } from "../pages/contact/Contact";
-import { Portfolio } from "../pages/projects/Projects";
+import { Projects } from "../pages/projects/Projects";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence} from "framer-motion";
 
@@ -17,7 +17,7 @@ export const AnimatedRoutes = () => {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About image={imgAbout}/>} />
-                <Route path="/projects" element={<Portfolio />} />
+                <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </AnimatePresence>

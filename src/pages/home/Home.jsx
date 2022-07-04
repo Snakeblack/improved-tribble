@@ -9,7 +9,7 @@ import {
     LetraAnimada,
     NombreAnimado,
     WebAnimado,
-} from "./Home.elements";
+} from "./components/Home.styled";
 import SvgComponent from "./components/SvgComponent";
 
 export const Home = () => {
