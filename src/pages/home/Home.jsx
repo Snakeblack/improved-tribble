@@ -1,4 +1,6 @@
 import React from "react";
+import { About } from "../about/About";
+import { Projects } from "../projects/Projects";
 import {
   Container,
   Title,
@@ -16,10 +18,9 @@ import SvgComponent from "./components/SvgComponent";
 export const Home = () => {
   return (
     <>
-      <Container
-        id="style-1"
-      >
+      <Container id="style-1">
         <Section
+          id="section-1"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -66,12 +67,10 @@ export const Home = () => {
           </Description>
         </Section>
         <ScrollDown>
-            <a href="#section-2"></a>
+          <a href="#section-2"></a>
         </ScrollDown>
-        <Section
-            id="section-2"
-        >
-            <Title>TEXTO DE PRUEBA</Title>
+        <Section id="section-2">
+          <About />
         </Section>
         <ScrollDown />
       </Container>

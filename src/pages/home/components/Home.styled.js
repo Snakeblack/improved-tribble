@@ -1,31 +1,12 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const HtmlBody = styled.span`
-  color: #1a4a4d;
-  font-family: "Island Moments", cursive;
-  font-size: 1.8vw;
-  font-weight: 700;
-  @media screen and (max-width: 500px) {
-    font-size: 16px;
-  }
-
-  h1::after {
-    content: "<html>";
-    color: #1a4a4d;
-    font-family: "Island Moments", cursive;
-    font-size: 1.8vw;
-    font-weight: 700;
-    @media screen and (max-width: 500px) {
-      font-size: 16px;
-    }
-  }
-`;
-
 export const Container = styled(motion.main)`
   height: 100vh;
   width: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 `;
 
 export const Section = styled.section`
@@ -35,6 +16,8 @@ export const Section = styled.section`
   width: 80vw;
   margin: 0 auto;
   justify-content: center;
+  position: relative;
+  scroll-snap-align: start;
 
   h1::before {
     content: "<h1>";
@@ -129,6 +112,27 @@ export const Title = styled.h1`
 
   @media screen and (max-width: 375px) {
     font-size: 2.2rem;
+  }
+`;
+
+export const HtmlBody = styled.span`
+  color: #1a4a4d;
+  font-family: "Island Moments", cursive;
+  font-size: 1.8vw;
+  font-weight: 700;
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+
+  h1::after {
+    content: "<html>";
+    color: #1a4a4d;
+    font-family: "Island Moments", cursive;
+    font-size: 1.8vw;
+    font-weight: 700;
+    @media screen and (max-width: 500px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -241,7 +245,7 @@ export const IconAnimated = styled.div`
 
   svg {
     fill: var(--silver);
-    filter: drop-shadow(10px 4px 20px #000);
+    filter: drop-shadow(30px 0px 5px rgba(0, 0, 0, 0.2));
     transition: all 0.5s ease-in-out 0.1s;
     transform: rotate(12deg);
     &:hover {
@@ -261,15 +265,15 @@ export const ScrollDown = styled.div`
   width: 100%;
   height: 10vh;
   text-align: center;
-  justify-content: end;
-  padding-right: 2rem;
+  position: relative;
 
   a {
     width: 60px;
     height: 60px;
     border: 2px solid #333;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    left: calc(100% - 150px);
     animation: down 1.5s infinite;
     -webkit-animation: down 1.5s infinite;
 
@@ -286,10 +290,15 @@ export const ScrollDown = styled.div`
     }
   }
 
-  @media screen and (max-width: 618px) {
+  @media screen and (max-width: 1024px) {
+
     a {
       width: 30px;
       height: 30px;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      bottom: 20px;
 
       &::before {
         top: 7px;
