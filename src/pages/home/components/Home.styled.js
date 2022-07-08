@@ -14,7 +14,7 @@ export const Section = styled.section`
   flex-direction: column;
   height: 90vh;
   width: 80vw;
-  margin: 0 auto;
+  margin: 0 0 0 2.1rem;
   justify-content: center;
   position: relative;
   scroll-snap-align: start;
