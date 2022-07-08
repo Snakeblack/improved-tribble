@@ -10,7 +10,7 @@ export const AnimatedRoutes = () => {
     const location = useLocation();
     const imgAbout = {
         alt: "About image",
-        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-581ed.appspot.com/o/images%2Ffoto-about.webp?alt=media&token=fa9353a9-d47f-4b07-8b4d-e9ded4b4d79a"
+        src: "" // TODO: Añadir imagen nueva para el about
     }
     return (
         <AnimatePresence exitBeforeEnter>
