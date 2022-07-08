@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 export const Container = styled(motion.main)`
   height: 100vh;
   width: 100%;
+  box-sizing: border-box;
 `;
 
 export const Section = styled.section`
@@ -12,10 +13,12 @@ export const Section = styled.section`
   height: 90vh;
   width: 80vw;
   margin: 0;
-  padding: 0 0 0 2.1rem;
+  padding: 0;
   justify-content: center;
   position: relative;
   scroll-snap-align: start;
+  padding: 0 0 0 5vw;
+  box-sizing: border-box;
 
   h1::before {
     content: "<h1>";
@@ -25,6 +28,7 @@ export const Section = styled.section`
     font-size: 1.8vw;
     font-weight: 700;
     background: #1a4a4d;
+    background-clip: text;
     -webkit-background-clip: text;
     @media screen and (max-width: 530px) {
       font-size: 1.5rem;
@@ -39,6 +43,7 @@ export const Section = styled.section`
     font-size: 1.8vw;
     font-weight: 700;
     background: #1a4a4d;
+    background-clip: text;
     -webkit-background-clip: text;
     @media screen and (max-width: 530px) {
       font-size: 1.5rem;

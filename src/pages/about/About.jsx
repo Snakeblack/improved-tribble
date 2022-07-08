@@ -15,7 +15,7 @@ export const About = () => {
           <TituloAnimado>About</TituloAnimado>
         </Title>
         <Description>
-          Esto es un texto descriptivo de prueba etc, Luego tal y luego pascual
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rhoncus elementum ultricies. Nam finibus consequat elit, non lobortis lacus. Aliquam erat volutpat. Donec hendrerit tincidunt sem eu faucibus. Nunc euismod congue tellus efficitur pharetra. Fusce auctor augue felis, a fringilla sem blandit nec. Nunc in lectus odio. In hac habitasse platea dictumst.
         </Description>
       </Section>
     </Container>

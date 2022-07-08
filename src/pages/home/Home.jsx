@@ -12,6 +12,7 @@ import {
   NombreAnimado,
   WebAnimado,
   Section,
+  MainSection,
 } from "./components/Home.styled";
 import SvgComponent from "./components/SvgComponent";
 
@@ -19,7 +20,7 @@ export const Home = () => {
   return (
     <>
       <Container id="scroll">
-        <Section
+        <MainSection
           id="section-1"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -65,7 +66,7 @@ export const Home = () => {
             Full&nbsp;Stack&nbsp;Developer&nbsp;/&nbsp;MERN&nbsp;&&nbsp;JAVA
             <br />
           </Description>
-        </Section>
+        </MainSection>
         <ScrollDown>
           <a href="#section-2"></a>
         </ScrollDown>
@@ -75,6 +76,9 @@ export const Home = () => {
         <ScrollDown>
           <a href="#section-3"></a>
         </ScrollDown>
+        <Section id="section-3">
+          <Projects />
+        </Section>
       </Container>
     </>
   );

@@ -4,6 +4,7 @@
     --bright-maroon: #ba274aff;
     --silver: #bfc0c0ff;
     --scrollbar: #212121;
+    --silver-html: #1a4a4d;
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Manrope:wght@200;300;600'); */
@@ -20,8 +21,8 @@ body {
     background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-581ed.appspot.com/o/images%2Fmosaico.png?alt=media&token=da65ffd7-0416-4b4b-924c-19322e23731f");
     background-size: 4px;
     background-repeat: repeat;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
     cursor: url("https://firebasestorage.googleapis.com/v0/b/portfolio-581ed.appspot.com/o/images%2Fauto.png?alt=media&token=ef4638b3-9422-4972-9725-d351e79af40c"),
         auto;
 }

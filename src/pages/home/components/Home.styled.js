@@ -5,30 +5,33 @@ export const Container = styled(motion.main)`
   height: 100vh;
   width: 100%;
   overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-snap-type: y mandatory;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 `;
 
-export const Section = styled.section`
+export const MainSection = styled.section`
   display: flex;
   flex-direction: column;
   height: 90vh;
-  width: 80vw;
+  width: 75vw;
   margin: 0;
-  padding: 0 0 0 4vw;
+  padding: 0;
   justify-content: center;
   position: relative;
   scroll-snap-align: start;
+  padding: 0 0 0 5vw;
+  box-sizing: border-box;
 
   h1::before {
     content: "<h1>";
-    color: #1a4a4d;
-    filter: grayscale(0);
+    color: var(--silver-html);
     font-family: "Island Moments", cursive;
     font-size: 1.8vw;
     font-weight: 700;
-    background: #1a4a4d;
-    -webkit-background-clip: text;
+
     @media screen and (max-width: 530px) {
       font-size: 1.5rem;
     }
@@ -36,13 +39,11 @@ export const Section = styled.section`
 
   h1::after {
     content: " </h1>";
-    color: #1a4a4d;
-    filter: grayscale(0);
+    color: var(--silver-html);
     font-family: "Island Moments", cursive;
     font-size: 1.8vw;
     font-weight: 700;
-    background: #1a4a4d;
-    -webkit-background-clip: text;
+
     @media screen and (max-width: 530px) {
       font-size: 1.5rem;
     }
@@ -50,7 +51,7 @@ export const Section = styled.section`
 
   p::before {
     content: "<p>";
-    color: #1a4a4d;
+    color: var(--silver-html);
     font-family: "Island Moments", cursive;
     font-size: 1.8vw;
     font-weight: 700;
@@ -61,7 +62,7 @@ export const Section = styled.section`
 
   p::after {
     content: " </p>";
-    color: #1a4a4d;
+    color: var(--silver-html);
     font-family: "Island Moments", cursive;
     font-size: 1.8vw;
     font-weight: 700;
@@ -73,6 +74,23 @@ export const Section = styled.section`
   @media (max-width: 530px) {
     margin: 0;
     padding: 0 0 0 0.6rem;
+    width: 99.4vw;
+  }
+`;
+
+export const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 80vw;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  position: relative;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+
+  @media (max-width: 530px) {
     width: 100vw;
   }
 `;
@@ -84,6 +102,7 @@ export const Title = styled.h1`
   font-weight: 600;
   justify-content: center;
   margin: 0 0;
+  word-wrap: break-word;
 
   @media screen and (max-width: 1024px) {
     font-size: 5.2rem;
@@ -102,7 +121,7 @@ export const Title = styled.h1`
   }
 
   @media screen and (max-width: 530px) {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
   }
 
   @media screen and (max-width: 450px) {
@@ -119,7 +138,7 @@ export const Title = styled.h1`
 `;
 
 export const HtmlBody = styled.span`
-  color: #1a4a4d;
+  color: var(--silver-html);
   font-family: "Island Moments", cursive;
   font-size: 1.8vw;
   font-weight: 700;
@@ -129,7 +148,7 @@ export const HtmlBody = styled.span`
 
   h1::after {
     content: "<html>";
-    color: #1a4a4d;
+    color: var(--silver-html);
     font-family: "Island Moments", cursive;
     font-size: 1.8vw;
     font-weight: 700;
@@ -294,14 +313,16 @@ export const ScrollDown = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
+    
+    &:{
+      justify-content: center;
+    }
 
     a {
       width: 30px;
       height: 30px;
       position: relative;
-      left: 50%;
-      right: 50%;
-      bottom: 20px;
+      bottom: 2rem;
 
       &::before {
         top: 7px;
