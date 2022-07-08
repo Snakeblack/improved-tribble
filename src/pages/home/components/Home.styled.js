@@ -15,7 +15,7 @@ export const Section = styled.section`
   height: 90vh;
   width: 80vw;
   margin: 0;
-  padding: 0 0 0 2.1rem;
+  padding: 0 0 0 4vw;
   justify-content: center;
   position: relative;
   scroll-snap-align: start;
