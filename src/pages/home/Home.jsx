@@ -72,7 +72,9 @@ export const Home = () => {
         <Section id="section-2">
           <About />
         </Section>
-        <ScrollDown />
+        <ScrollDown>
+          <a href="#section-3"></a>
+        </ScrollDown>
       </Container>
     </>
   );

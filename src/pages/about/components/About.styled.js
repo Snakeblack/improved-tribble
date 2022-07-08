@@ -115,7 +115,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const WebAnimado = styled.span`
+export const TituloAnimado = styled.span`
   display: inline-block;
   font-weight: 800;
   cursor: url("https://firebasestorage.googleapis.com/v0/b/portfolio-581ed.appspot.com/o/images%2Fcursor.png?alt=media&token=efe8c296-c259-4e12-baf7-29311013ec0e"),
@@ -129,5 +129,43 @@ export const WebAnimado = styled.span`
     color: var(--bright-maroon);
     -webkit-animation: glitch 2500ms infinite linear alternate-reverse;
     animation: glitch 2500ms infinite linear alternate-reverse;
+  }
+`;
+
+export const Description = styled.p`
+  align-items: center;
+  color: #c7abab;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3vw;
+  font-weight: 200;
+  justify-content: center;
+  margin: 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 818px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 618px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 530px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 391px) {
+    font-size: 0.8rem;
   }
 `;
