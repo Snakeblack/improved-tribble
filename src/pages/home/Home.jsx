@@ -18,7 +18,7 @@ import SvgComponent from "./components/SvgComponent";
 export const Home = () => {
   return (
     <>
-      <Container id="style-1">
+      <Container id="scroll">
         <Section
           id="section-1"
           initial={{ opacity: 0 }}
