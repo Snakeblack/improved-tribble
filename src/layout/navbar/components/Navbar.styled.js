@@ -187,7 +187,7 @@ export const MenuItemLink = styled.span`
 
 export const MobileIcon = styled.div`
   display: none;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1;
