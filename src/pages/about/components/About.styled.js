@@ -10,7 +10,7 @@ export const Container = styled(motion.main)`
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
   width: 80vw;
   margin: 0;
   padding: 0;

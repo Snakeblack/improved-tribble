@@ -81,7 +81,7 @@ export const MainSection = styled.section`
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
   width: 80vw;
   margin: 0;
   padding: 0;
@@ -279,57 +279,5 @@ export const IconAnimated = styled.div`
 
   @media (max-width: 900px) {
     display: none;
-  }
-`;
-
-export const ScrollDown = styled.div`
-  display: flex;
-  width: 100%;
-  height: 10vh;
-  text-align: center;
-  position: relative;
-
-  a {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    position: absolute;
-    left: calc(100% - 150px);
-    animation: down 1.5s infinite;
-    -webkit-animation: down 1.5s infinite;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: 18px;
-      width: 18px;
-      height: 18px;
-      border-left: 2px solid #333;
-      border-bottom: 2px solid #333;
-      transform: rotate(-45deg);
-    }
-  }
-
-  @media screen and (max-width: 1024px) {
-    
-    &:{
-      justify-content: center;
-    }
-
-    a {
-      width: 30px;
-      height: 30px;
-      position: relative;
-      bottom: 2rem;
-
-      &::before {
-        top: 7px;
-        left: 8px;
-        width: 8px;
-        height: 8px;
-      }
-    }
   }
 `;

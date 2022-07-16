@@ -5,7 +5,6 @@ import {
   Container,
   Title,
   Description,
-  ScrollDown,
   HtmlBody,
   IconAnimated,
   LetraAnimada,
@@ -13,8 +12,9 @@ import {
   WebAnimado,
   Section,
   MainSection,
-} from "./components/Home.styled";
+} from "./style/Home.styled";
 import SvgComponent from "./components/SvgComponent";
+import ScrollTop from "./components/ScrollTop";
 
 export const Home = () => {
   return (
@@ -67,15 +67,10 @@ export const Home = () => {
             <br />
           </Description>
         </MainSection>
-        <ScrollDown>
-          <a href="#section-2"></a>
-        </ScrollDown>
+        <ScrollTop />
         <Section id="section-2">
           <About />
         </Section>
-        <ScrollDown>
-          <a href="#section-3"></a>
-        </ScrollDown>
         <Section id="section-3">
           <Projects />
         </Section>

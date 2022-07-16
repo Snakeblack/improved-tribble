@@ -32,6 +32,10 @@ a {
         pointer;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 #root {
     display: flex;
     flex-direction: row;
@@ -45,12 +49,12 @@ a {
         border-radius: 10px;
         background-color: transparent;
     }
-    
+
     #scroll::-webkit-scrollbar {
         width: 8px;
         background-color: transparent;
     }
-    
+
     #scroll::-webkit-scrollbar-thumb {
         border-radius: 10px;
         background-color: var(--scrollbar);
@@ -177,25 +181,49 @@ a {
 }
 
 @keyframes down {
-	0% {
-		transform: translate(0);
-	}
-	20% {
-		transform: translateY(15px);
-	}
-	40% {
-		transform: translate(0);
-	}
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
 }
 
 @-webkit-keyframes down {
-	0% {
-		transform: translate(0);
-	}
-	20% {
-		transform: translateY(15px);
-	}
-	40% {
-		transform: translate(0);
-	}
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(-15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@-webkit-keyframes up {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(-15px);
+    }
+    40% {
+        transform: translate(0);
+    }
 }
